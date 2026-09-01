@@ -46,14 +46,14 @@ If you don't have admin rights, ask a system administrator to either:
 ### One-Command Installation
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/indawsodoo/ai-claude-install/main/scripts/install-macos.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/DynAppsNV/ai-claude-install/main/scripts/install-macos.sh)
 ```
 
 ### Manual Installation (Recommended)
 
 ```bash
 # Download the script
-curl -fsSL https://raw.githubusercontent.com/indawsodoo/ai-claude-install/main/scripts/install-macos.sh -o install-macos.sh
+curl -fsSL https://raw.githubusercontent.com/DynAppsNV/ai-claude-install/main/scripts/install-macos.sh -o install-macos.sh
 
 # Make it executable
 chmod +x install-macos.sh
@@ -73,14 +73,14 @@ chmod +x install-macos.sh
 ### One-Command Installation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/indawsodoo/ai-claude-install/main/scripts/install-linux.sh | bash
+curl -fsSL https://raw.githubusercontent.com/DynAppsNV/ai-claude-install/main/scripts/install-linux.sh | bash
 ```
 
 ### Manual Installation
 
 ```bash
 # Download the script
-curl -fsSL https://raw.githubusercontent.com/indawsodoo/ai-claude-install/main/scripts/install-linux.sh -o install-linux.sh
+curl -fsSL https://raw.githubusercontent.com/DynAppsNV/ai-claude-install/main/scripts/install-linux.sh -o install-linux.sh
 
 # Make it executable
 chmod +x install-linux.sh
@@ -115,14 +115,14 @@ Before running the script, you need WSL2 installed:
 Inside your WSL2 Ubuntu terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/indawsodoo/ai-claude-install/main/scripts/install-windows.sh | bash
+curl -fsSL https://raw.githubusercontent.com/DynAppsNV/ai-claude-install/main/scripts/install-windows.sh | bash
 ```
 
 ### Manual Installation
 
 ```bash
 # Download the script
-curl -fsSL https://raw.githubusercontent.com/indawsodoo/ai-claude-install/main/scripts/install-windows.sh -o install-windows.sh
+curl -fsSL https://raw.githubusercontent.com/DynAppsNV/ai-claude-install/main/scripts/install-windows.sh -o install-windows.sh
 
 # Make it executable
 chmod +x install-windows.sh
@@ -249,7 +249,9 @@ pyenv global 3.13.3
 
 ## 📜 License
 
-These installation scripts are provided as-is for use by Indaws/Dynapps consultants.
+These installation scripts are provided as-is for use by Dynapps consultants and their clients.
+
+Originally developed by Dynapps ES. Maintained for the Dynapps group.
 
 ## 🤝 Contributing
 
@@ -257,6 +259,6 @@ Found a bug or have a suggestion? Please create an issue or submit a pull reques
 
 ---
 
-**Made with ❤️ for all Indaws/Dynapps employees**
+**Made with ❤️ at Dynapps**
 
 Happy coding with Claude! 🤖✨
