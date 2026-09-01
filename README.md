@@ -257,6 +257,21 @@ Originally developed by Dynapps ES. Maintained for the Dynapps group.
 
 Found a bug or have a suggestion? Please create an issue or submit a pull request!
 
+### Syncing fixes from Dynapps ES
+
+This repository carries the upstream history but is not a GitHub fork, so
+there is no "Sync fork" button. Pull improvements from the Spanish original
+by adding it as a second remote:
+
+```bash
+git remote add upstream https://github.com/indawsodoo/ai-claude-install.git
+git fetch upstream
+git merge upstream/main
+```
+
+Keep the `DynAppsNV` URLs in `README.md` when resolving conflicts — that is
+the only file that differs from upstream.
+
 ---
 
 **Made with ❤️ at Dynapps**
