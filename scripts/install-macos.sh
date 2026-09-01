@@ -168,7 +168,9 @@ install_homebrew() {
         xcode-select --install
         print_warning "Please complete the Xcode installation in the popup window,"
         print_warning "then re-run this script!"
-        exit 0
+        # Exit non-zero: the environment is NOT installed. Exiting 0 here made an
+        # incomplete run look like a success to anything checking the exit code.
+        exit 1
     fi
 
     # Install Homebrew
