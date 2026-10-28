@@ -82,7 +82,7 @@ detect_os() {
         print_info "Current OS: $OSTYPE"
         print_info "Please use the appropriate script for your OS:"
         print_info "  • macOS: install-macos.sh"
-        print_info "  • Windows (WSL2): install-windows.sh"
+        print_info "  • Windows: no script needed, see the README"
         exit 1
     fi
 }
