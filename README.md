@@ -25,7 +25,7 @@ These scripts will install and configure everything you need:
 
 - **macOS** (Intel and Apple Silicon)
 - **Linux** (Debian-based: Ubuntu, Debian, Linux Mint, Pop!_OS, etc.)
-- **Windows** (via WSL2 with Ubuntu/Debian)
+- **Windows** 10 and 11, natively (no script, no WSL needed)
 
 ---
 
@@ -93,7 +93,36 @@ chmod +x install-linux.sh
 
 ---
 
-## 🪟 Windows Installation (WSL2)
+## 🪟 Windows Installation
+
+On Windows there is no script and no WSL. Everything runs natively, so the Code
+tab of the Claude app finds git and gh and can commit and push by itself.
+
+1. **Claude app**: download it from https://claude.com/download, sign in and
+   open the Code tab.
+2. **Git for Windows** (keep Git Credential Manager on), in PowerShell:
+   ```powershell
+   winget install --id Git.Git -e --source winget
+   ```
+3. **GitHub CLI**:
+   ```powershell
+   winget install --id GitHub.cli -e --source winget
+   ```
+4. **Close and reopen PowerShell**, then sign in to GitHub once:
+   ```powershell
+   gh auth login --web --git-protocol https
+   ```
+
+Optional, only when a skill runs scripts: `winget install --id Python.Python.3.12 -e`.
+Claude Code in a terminal, without the app: `irm https://claude.ai/install.ps1 | iex`.
+
+**Note:** Git for Windows and GitHub CLI can ask for administrator rights.
+Without local administrator rights, ask IT to install both.
+
+## 🐧 Windows via WSL2 (not recommended)
+
+Only if you want a Linux environment on Windows anyway. The Claude app does not
+see git and gh inside WSL, and gh needs a separate login there.
 
 ### Prerequisites
 
